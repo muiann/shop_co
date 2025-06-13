@@ -1,0 +1,39 @@
+
+ .container {
+    display: flex;
+min-width: 900px;
+padding-left: 2rem;
+padding-right: 2rem;
+margin: 0 auto;
+}
+main {
+ min-height: calc(100vh - 85px - 22px);
+ padding-top: 1.5rem;
+ padding-bottom: 1
+ 5rem;
+}
+
+header{
+    min-height: 50px;
+    background-color: rgb(219, 203, 170);
+    padding: auto;
+} 
+header :link {
+    text-align: center;
+    color: rgb(75, 72, 67);
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+ li :link {
+     text-decoration: none;
+     color: rgb(75, 72, 67);
+}
+
+footer{
+    min-height: 30px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
