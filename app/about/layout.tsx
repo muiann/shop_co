@@ -5,12 +5,14 @@ export default function Aboutlayout({
 }: {
     children: React.ReactNode;
 }) {
-    return <div>
+    return ( 
+    <div>
         <h1>About us</h1>
         <ul>
-            <li><Link href='./about/contacts/page'>Contacts</Link></li>
-            <li><Link href='./about/team/page'>Team</Link></li>
+            <li><Link href="/about/contacts">Contacts</Link></li>
+            <li><Link href="/about/team">Team</Link></li>
         </ul>
         {children}
     </div>
+    );
 }
