@@ -34,21 +34,21 @@ const Header = () => {
           <input className={styles.search} placeholder="Search for products..."/>
          </form>
         </div>
-        {/* <div className={styles.buttons}> */}
-                      <Image src="/profile-icon.png"
-                    width={24}
-                    height={24}
-                    alt="Picture of the author"
-                  />
-                      <Image src="/basket-icon.png"
+        <div className={styles.buttons}>
+                      <Image className={styles.buttons} 
+                      src="/profile-icon.png"
                               width={24}
                               height={24}
-                              alt="basket"
-                            /> 
-                  
-           
+                              alt="Picture of the author"
+                      />
+                    <Image className={styles.buttons}
+                    src="/basket-icon.png"
+                            width={24}
+                            height={24}
+                            alt="basket"
+                    /> 
+                 </div>   
        </header>
-     
   );  
 };
 
