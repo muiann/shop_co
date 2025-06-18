@@ -12,7 +12,9 @@ const IntegralCF = localFont({ src: '../public/fonts/integral-cf/integralCF-Medi
 const Header = () => {
     return (
       
-      <header className={styles.header} >
+      <header >
+        <div className={styles.header}>
+       
          <div className={styles.logo}>  
           <Image 
               src="/logo.png"
@@ -28,27 +30,30 @@ const Header = () => {
             <li><a href="/Brands">Brands</a></li>
           </ul>
 
-       <div >
-         <form className={styles.search_block}>
-           <input type="submit" name="submit" className={styles.submit} value=""/>
-          <input className={styles.search} placeholder="Search for products..."/>
-         </form>
-        </div>
-        <div className={styles.buttons}>
-                      <Image className={styles.buttons} 
-                      src="/profile-icon.png"
-                              width={24}
-                              height={24}
-                              alt="Picture of the author"
-                      />
-                    <Image className={styles.buttons}
-                    src="/basket-icon.png"
-                            width={24}
-                            height={24}
-                            alt="basket"
-                    /> 
+              <div >
+                <form className={styles.search_block}>
+                  <input type="submit" name="submit" className={styles.submit} value=""/>
+                  <input className={styles.search} placeholder="Search for products..."/>
+                </form>
+                </div>
+                <div className={styles.buttons}>
+                              <Image className={styles.buttons} 
+                              src="/profile-icon.png"
+                                      width={24}
+                                      height={24}
+                                      alt="Picture of the author"
+                              />
+                            <Image className={styles.buttons}
+                            src="/basket-icon.png"
+                                    width={24}
+                                    height={24}
+                                    alt="basket"
+                            /> 
                  </div>   
-       </header>
+                           
+        </div>
+ 
+    </header>
   );  
 };
 

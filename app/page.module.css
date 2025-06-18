@@ -1,3 +1,4 @@
+
 .main{
   display: flex;
   max-width: 1300px;
@@ -11,6 +12,17 @@
       display: flex;
       margin-top: 62px;
       margin-bottom: 100px;
+      gap: 24px;
+}
+
+.header hr{
+  width: 1300px;
+  margin-bottom: 24px;
+}
+.hr{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #0000001A;
 }
 
 .logo{
@@ -130,11 +142,12 @@
 } */
 
 .filter {
-   width: 295px;
+  width: 295px;
   height: 1220px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 30px;
+  margin-right: 24px;
 }
 
 .filter_header {
@@ -150,7 +163,12 @@
   margin-bottom: 20px;
 }
 
+.hr{
+   color: #00000099;
+}
+
 .typethings li{
+  color: #00000099;
    width: 247px;
   margin-top: 20px;
   font-weight: 400;
@@ -165,12 +183,15 @@
 }
 
 .filter_item h4 {
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 .colors {
+  width: 247px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -181,18 +202,58 @@
   height: 25px;
   border-radius: 50%;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 1px solid #00000099;
 }
 
 .color_dot.selected {
-  border: 2px solid black;
+  border: 1px solid #00000000;
+}
+
+.price_values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.input[type="range"] {
+  width: 100%;
+}
+
+.prise hr{
+  margin-top: 24px;
+}
+.prise h2{
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.cards{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.cards h2{
+  width: 925px;
+  height: 51px;
+  display: flex;
+  flex-direction: column;
+  
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.productCard{
+    width: 295px;
 }
 
 .sizes {
+  margin-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
-   
-  
   gap: 10px;
 }
 
@@ -217,44 +278,166 @@ color: #00000099;
 }
 
 .apply_btn {
-  margin-top: 24px;
+  margin-top: 44px;
   width: 100%;
   background-color: black;
   color: white;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 35px;
   border: none;
   cursor: pointer;
 }
 
-.price_values {
+.newsletters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 1240px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.newsletters h2{
+  flex: 2;
+}
+.textblock{
+  width: 551px;
+  height: 94px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  margin-left: 65px;
+  font-weight: bold;
+}
+.formletter{
+  width: 394px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.formletter image{
+  display: flex;
+  padding-left: 10px;
+}
+.newsletters input {
+    width: 394px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.newsletters button{
+ padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    width: 394px;
+    
+}
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #555;
+  text-decoration: none;
+}
+
+.linksContainer {
+  flex: 2;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  min-width: 400px;
 }
 
-.input[type="range"] {
-  width: 100%;
+.columnTitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.prise hr{
-  margin-top: 24px;
-}
-.prise h2{
-  margin-top: 24px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 100%;
+.linkList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
+.linkList li {
+  margin-bottom: 8px;
+  color: #555;
+  cursor: pointer;
 }
 
-.productCard{
-    width: 295px;
+.linkList li:hover {
+  text-decoration: underline;
+}
+
+.right {
+  flex: 1;
+  min-width: 200px;
+  text-align: right;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.paymentIcons img {
+  height: 25px;
 }
 

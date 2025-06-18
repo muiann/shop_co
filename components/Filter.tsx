@@ -50,7 +50,7 @@ const Filter = () => {
   const [priceRange, setPriceRange] = useState([50, 200]);
   
   const [selectedSize, setSelectedSize] = useState("Large");
-  const [selectedColor, setSelectedColor] = useState("blue");
+  
   const handleSliderChange = (event, newValue) => {
     setPriceRange(newValue);
   };
@@ -62,6 +62,12 @@ const Filter = () => {
   const handleMaxInputChange = (event) => {
     const value = Math.max(Number(event.target.value), priceRange[0]);
     setPriceRange([priceRange[0], value]);
+  };
+  
+  const [selectedColor, setSelectedColor] = useState("");
+
+  const handleColorSelect = (color) => {
+    setSelectedColor(color);
   };
 
   const sizes = [
@@ -75,16 +81,18 @@ const Filter = () => {
     "3X-Large",
     "4X-Large",
   ];
-  const colors = [
-    "green",
-    "red",
-    "yellow",
-    "orange",
-    "blue",
-    "purple",
-    "pink",
-    "black",
-    "white",
+  const colors = [ 
+    { name: "Green", hex: "#00C12B" },
+    { name: "Red", hex: "#F50606" },
+    { name: "Yellow", hex: "#F5DD06" },
+    { name: "Orange", hex: "#F57906" },
+    { name: "Blue", hex: "#06CAF5" },
+    { name: "Blues", hex: "#063AF5" },
+    { name: "Purple", hex: "#7D06F5" },
+    { name: "Pink", hex: "#F506A4" },
+    { name: "White", hex: "#FFFFFF" },
+    { name: "Black", hex: "#000000" },
+    
   ];
 
   const handlePriceChange = (e) => {
@@ -95,7 +103,7 @@ const Filter = () => {
     
     <div className={styles.filter}>
       <div className={styles.filter_header}>
-        <h3>Filters</h3>
+        <h4>Filters</h4>
         <span><Image src="/filter-icon.png" 
                       alt="" 
                       width={24}
@@ -140,21 +148,29 @@ const Filter = () => {
     </Box>
       </div>
 
-      <div className={styles.filter_item}>
+      <div style={{width: "200px" }}>
+      <div>
         <h4>Colors</h4>
-        <div className={styles.colors}>
-          {colors.map((color) => (
-            <span
-              key={color}
-              className={`color_dot ${styles.color_dot} ${color} ${
-                selectedColor === color ? "selected" : ""
-              }`}
-              onClick={() => setSelectedColor(color)}
-            ></span>
-          ))}
-        </div>
+       
       </div>
-
+      <div className={styles.colors}>
+        {colors.map((color) => (
+          <div className={styles.color_dot}
+            key={color.hex}
+            onClick={() => handleColorSelect(color.hex)}
+            style={{
+              backgroundColor: color.hex,
+              borderRadius: "50%",
+              border: selectedColor === color.hex ? "1px solid #000000" : "1px #00000099",
+              cursor: "pointer",
+              marginBottom: 20,
+            }}
+          ></div>
+        ))}
+      </div>
+     
+    </div>
+ <hr />
       <div className={styles.filter_item}>
         <h4>Size</h4>
         <div className={styles.sizes}>
@@ -171,7 +187,17 @@ const Filter = () => {
           ))}
         </div>
       </div>
-
+       <hr  />
+               <div className={styles.typethings}>
+           
+            <h4>Dress Style</h4>
+            <ul>
+                <li><a href="">Casual</a><Image src="/arrow-icon.png" alt='' width={14} height={14} /></li>
+                <li><a href="">Formal</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
+                <li><a href="">Party</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
+                 <li><a href="">Gym</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
+             </ul>
+            </div>
       <div className={styles.filter_buttons}>
         <button className= {styles.apply_btn}>Apply Filter</button>
       </div>

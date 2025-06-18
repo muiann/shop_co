@@ -17,18 +17,7 @@ export default function ProductCard() {
            alt="Product evaluation"
            />
         </div>
-        <div className='slider'>
-          <button className='Previous'>
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">...</a>
-            <a href="">8</a>
-            <a href="">9</a>
-            <a href="">10</a>
-
-          </button>
-        </div>
+        
       </div>
   )
 }
