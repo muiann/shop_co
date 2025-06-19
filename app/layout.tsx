@@ -10,6 +10,8 @@ import  ProductCard  from '../components/ProductCard';
 import "./globals.css";
 import localFont from 'next/font/local';
 import styles from '../app/page.module.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
  
 
 
@@ -27,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={Satoshi.className}>
+      <body className={Satoshi.className}>{children}
         <Header />
         
         <section className={styles.main}> 
@@ -36,7 +38,7 @@ export default function RootLayout({
           </div> 
         
            <div className={styles.cards}>
-            <div><h2 >Casual</h2> </div>
+            {/* <div><h1 >Casual</h1> </div> */}
               
                   <ProductCard />
                   <ProductCard />
@@ -47,6 +49,7 @@ export default function RootLayout({
                   <ProductCard />
                   <ProductCard />
                   <ProductCard />
+                  <Slider />
            </div>
         </section>
        <NewsletterSubscription />

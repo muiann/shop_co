@@ -230,18 +230,16 @@
 }
 
 .cards{
-  
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
 }
-.cards h2{
+.h1{
   width: 925px;
   height: 51px;
   display: flex;
   flex-direction: column;
-  
   font-weight: 700;
   font-size: 32px;
 }
@@ -265,11 +263,10 @@
   max-width: 98px;
   height: 39px;
   font-family: Satoshi;
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-color: #00000099;
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #00000099;
 }
 
 .size.selected {
@@ -289,6 +286,8 @@ color: #00000099;
 }
 
 .newsletters{
+  position: absolute;
+  left: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -300,7 +299,7 @@ color: #00000099;
     max-width: 1240px;
     height: 180px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .newsletters h2{
@@ -326,7 +325,7 @@ color: #00000099;
   gap: 10px;
 }
 
-.formletter image{
+.formletter i{
   display: flex;
   padding-left: 10px;
 }
@@ -347,61 +346,95 @@ color: #00000099;
     font-weight: bold;
     cursor: pointer;
     width: 394px;
-    
 }
+
 .footer {
-  background-color: #f9f9f9;
+  margin-top: 210px;
+  width: 1441px;
+  height: 500px;
+  background-color: #F0F0F0;
   padding: 40px 20px;
-  font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .left {
   flex: 1;
-  min-width: 200px;
+  max-width: 248px;
+  height: 177px;
+  margin-right: 100px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 33.45px;
+  margin-bottom: 24px;
 }
 
 .description {
-  margin: 10px 0;
+  font-weight: 400;
   font-size: 14px;
-  color: #555;
+  line-height: 22px;
+  margin: 20px 0;
+  color: #00000099;
 }
 
 .socialIcons {
   display: flex;
   gap: 10px;
 }
+.socialIcons a{
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  border: 1px solid #00000033;
+}
 
 .icon {
-  font-size: 18px;
-  color: #555;
+  background-color: #fff;
+  border-radius: 50%;
   text-decoration: none;
+}
+.icon i{
+  padding: 5.5px 5.5px;
+  width: 11px;
+  height: 11px;
+  align-items: center;
+}
+.icon i .facebook{
+  width: 28px;
+  height: 28px;
+  background-color: #000;
 }
 
 .linksContainer {
   flex: 2;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 400px;
+  gap: 26px;
 }
 
 .columnTitle {
+  font-weight: 500;
   font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+   margin-bottom: 20px;
+  
 }
 
 .linkList {
@@ -411,33 +444,42 @@ color: #00000099;
 }
 
 .linkList li {
-  margin-bottom: 8px;
-  color: #555;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0px;
+margin-bottom: 8px;
+  color: #00000099;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .linkList li:hover {
   text-decoration: underline;
 }
 
-.right {
-  flex: 1;
-  min-width: 200px;
-  text-align: right;
+.rightspays {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1240px;
+  margin-top: 24px;
 }
 
 .copyright {
-  font-size: 12px;
-  margin-bottom: 10px;
-  color: #555;
+font-weight: 400;
+font-size: 14px;
+text-align: right;
+margin-bottom: 10px;
+ color: #00000099;
 }
 
 .paymentIcons {
-  display: flex;
-  gap: 10px;
-}
+  max-width: 281px;
+  height: 31px;
+  }
 
-.paymentIcons img {
-  height: 25px;
+.paymentIcons Image {
+  align-items: right;
 }
-
