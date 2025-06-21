@@ -9,9 +9,12 @@ import { Product } from "@/app/types/product.types";
 import { Review } from "@/app/types/review.types";
 
 
+
+
 export default function Home() {
   return (
     <>
+    
       <Header />
       <main className={styles.main}>
           <div className={styles.filters}>
@@ -21,6 +24,9 @@ export default function Home() {
               <h1>Casual</h1>
               <ProductCards />
             </div>
+           
+           
+           
       </main>
     </>
   );

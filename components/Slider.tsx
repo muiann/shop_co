@@ -7,7 +7,7 @@ const Slider = () => {
       <>
       
        <div >
-            <hr className={styles.hr}/>
+            <hr className={styles.hrbottom}/>
           </div>
         <div className={styles.slider}>
         

@@ -78,7 +78,7 @@ const Footer = () => {
         
       
       </div>
-        <hr />
+        <hr className={styles.hrfooter}/>
       {/* Нижняя часть с правами и способами оплаты */}
 
         <div className={styles.rightspays}>
