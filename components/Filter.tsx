@@ -4,47 +4,6 @@ import Image from 'next/image';
 import styles from '../app/page.module.css'; 
 import { Slider, TextField, Typography, Box, Grid } from '@mui/material';
 
-// const Filter = () => {
-//  return (
-//      <main className={styles.main}>
-//         <div className={styles.filters}>
-//             <div className={styles.filterstitle}>
-//                 <h2>Filter</h2>
-//                  <Image src="/filter-icon.png" 
-//                      alt="" 
-//                      width={24}
-//                      height={24}
-//                     />
-                    
-//             </div>
-            
-//         <div className={styles.typethings}>
-//             <hr />
-//             <ul>
-//                 <li><a href="">T-shirts</a><Image src="/arrow-icon.png" alt='' width={14} height={14} /></li>
-//                 <li><a href="">Shorts</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
-//                 <li><a href="">Shirts</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
-//                 <li><a href="">Hoodie</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
-//                 <li><a href="">Jeans</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
-//             </ul>
-             
-//         </div>
-
-//         <div className={styles.prise}>
-//            <hr />
-//             <h2>Prise</h2>
-//         </div>
-//         <div>
-           
-//         </div>
-//      </div>
-//     </main>
-//  )
-// };
-// export {Filter};
-
-// import React, { useState } from "react";
-// import "./Filter.css";
 
 const Filter = () => {
   const [priceRange, setPriceRange] = useState([50, 200]);
@@ -161,7 +120,7 @@ const Filter = () => {
             style={{
               backgroundColor: color.hex,
               borderRadius: "50%",
-              border: selectedColor === color.hex ? "1px solid #000000" : "1px #00000099",
+              border: selectedColor === color.hex ? "1px solid #000000" : "1px solid #00000033",
               cursor: "pointer",
               marginBottom: 20,
             }}

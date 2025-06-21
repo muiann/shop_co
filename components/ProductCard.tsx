@@ -3,6 +3,10 @@ import Rating from "./ui/Rating";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/app/types/product.types";
+import styles from '../app/page.module.css'; 
+import localFont from 'next/font/local';
+
+const Satoshi = localFont({ src: '../public/fonts/Satoshi_Complete/Satoshi-Medium.woff2' });
 
 type ProductCardProps = {
   data: Product;
@@ -10,22 +14,24 @@ type ProductCardProps = {
 
 const ProductCard = ({ data }: ProductCardProps) => {
   return (
-    <Link
+    <div className={styles.cards}> 
+
+    <Link 
       href={`/shop/product/${data.id}/${data.title.split(" ").join("-")}`}
-      className="flex flex-col items-start aspect-auto"
+      className={styles.card_name}
     >
       <div className="bg-[#F0EEED] rounded-[13px] lg:rounded-[20px] w-full lg:max-w-[295px] aspect-square mb-2.5 xl:mb-4 overflow-hidden">
-        <Image
+        <Image 
           src={data.srcUrl}
           width={295}
           height={298}
-          className="rounded-md w-full h-full object-contain hover:scale-110 transition-all duration-500"
           alt={data.title}
+          
           priority
         />
       </div>
-      <strong className="text-black xl:text-xl">{data.title}</strong>
-      <div className="flex items-end mb-1 xl:mb-2">
+      <p className={Satoshi.className}>{data.title}</p>
+      <div className={styles.rating}>
         <Rating
           initialValue={data.rating}
           allowFraction
@@ -78,6 +84,7 @@ const ProductCard = ({ data }: ProductCardProps) => {
         )}
       </div>
     </Link>
+        </div>
   );
 };
 
