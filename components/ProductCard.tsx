@@ -17,7 +17,7 @@ const ProductCard = ({ data }: ProductCardProps) => {
     <div className={styles.cards}> 
 
     <Link 
-      href={`/shop/product/${data.id}/${data.title.split(" ").join("-")}`}
+      href={`/product/${data.id}/${data.title.split(" ").join("-")}`}
       className={styles.card_name}
     >
       <div className="bg-[#F0EEED] rounded-[13px] lg:rounded-[20px] w-full lg:max-w-[295px] aspect-square mb-2.5 xl:mb-4 overflow-hidden">

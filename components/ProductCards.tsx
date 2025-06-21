@@ -1,8 +1,9 @@
 import React from "react";
-import {newArrivalsData} from ".././app/data/data";
+import {newArrivalsData} from "../app/data/data";
 import ProductCard from "./ProductCard";
 import { Product } from "@/app/types/product.types";
 import styles from '../app/page.module.css';
+
 async function getData() {
   //const response = await fetch(
   //  "https://api.slingacademy.com/products"
