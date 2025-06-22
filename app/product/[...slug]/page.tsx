@@ -1,5 +1,5 @@
 import {newArrivalsData} from "../../data/data";
-import Header from "@/components/product_page";
+import PageProduct from "@/components/product_page";
 import ReviewsContent from "@/components/product_page/ReviewsContent";
 import ProductListSec from "@/components/product_page/ProductListSec";
 import { Product } from "@/app/types/product.types";
@@ -39,7 +39,9 @@ const data: Product[] = await getExtraData();
       <div className="max-w-frame mx-auto px-4 xl:px-0">
         <hr className="h-[1px] border-t-black/10 mb-5 sm:mb-6" />
         <section className="mb-11">
-          <Header data={productData} />
+
+          <PageProduct data={productData} />
+        
         </section>
       </div>
       <ReviewsContent/>

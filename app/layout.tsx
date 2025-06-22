@@ -1,6 +1,7 @@
 
 import './globals.css';
 import type { Metadata } from 'next';
+import {Header} from '../components/Header';
 import { Footer } from '../components/Footer';
 import {Slider} from '../components/Slider';
 import { NewsletterSubscription } from '../components/NewsletterSubscription';
@@ -22,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={Satoshi.className}>{children}
+        
       
-       <Slider/> 
+       {/* <Slider/>  */}
        <NewsletterSubscription />
         <Footer />
         </body>

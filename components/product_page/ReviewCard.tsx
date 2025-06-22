@@ -2,6 +2,7 @@ import React from "react";
 import Rating from "../ui/Rating";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { Review } from "@/app/types/review.types";
+import styles from '../../app/page.module.css';
 
 type ReviewCardProps = {
   blurChild?: React.ReactNode;
@@ -16,7 +17,7 @@ const ReviewCard = ({
 }: ReviewCardProps) => {
   return (
     <div
-      className="relative bg-white flex flex-col items-start aspect-auto border border-black/10 rounded-[20px] p-6 sm:px-8 sm:py-7 overflow-hidden"
+      className={styles.reviews}
     >
       {blurChild && blurChild}
       <div className="w-full flex items-center justify-between mb-3 sm:mb-4">

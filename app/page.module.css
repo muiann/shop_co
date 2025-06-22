@@ -1,4 +1,3 @@
-
 .main{
   display: flex;
   max-width: 1300px;
@@ -391,6 +390,8 @@ font-size: 20px;
     border-radius: 25px;
     border: none;
     outline: none;
+     background-color: #fff;
+     color: #000;
 }
 
 .newsletters button{
@@ -544,4 +545,215 @@ margin-bottom: 10px;
 }
 .hrfooter{
   border: 1px solid #0000001A
+}
+
+/* Стили страницы товара*/
+
+.photoblock{
+  margin-left: 70px;
+  display: flex;
+  gap: 10px;
+}
+.photoblock_mini{
+ width: 152;
+height: 167;
+top: 216px;
+left: 100px;
+border-radius: 20px;
+
+}
+
+.photoblock_max{
+width: 444;
+height: 530;
+top: 216px;
+left: 266px;
+border-radius: 60px;
+margin-right: 30px;
+}
+
+.pageproduct{
+   width: 1240px;
+   height: 530px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 24px;
+}
+.nameproduct{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  margin-left: 65px;
+  font-weight: bold;
+  margin-left: 0;
+  
+}
+.rating{
+  margin-top: 14px;
+}
+.rating_span{
+  margin-top: 17px;
+  margin-left: 5px;
+font-family: Satoshi;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.price_discount{
+  margin-top: 14px;
+ display: flex;
+ gap: 10px;
+
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+}
+
+.price_discount_first {
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+.price_discount_second{
+font-weight: 700;
+font-size: 32px;
+vertical-align: middle;
+text-decoration: line-through;
+color: #0000004D;
+
+}
+
+.price_discount_percentage{
+width: 72;
+height: 34;
+top: 321px;
+left: 938px;
+border-radius: 62px;
+gap: 10px;
+padding-top: 3px;
+padding-right: 14px;
+padding-bottom: 0;
+padding-left: 14px;
+text-decoration: none;
+color: #FF3333;
+background: #FF33331A;
+font-weight: 500;
+font-size: 16px;
+text-decoration: none;
+}
+
+.aboutproduct{
+margin-top: 24px;
+font-weight: 400;
+font-size: 16px;
+color: #00000099;
+
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.titlereviews{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titlereviews a {
+  margin-left: 150px;
+margin-right: 200px;
+margin-bottom: 24px;
+font-weight: 500;
+font-size: 20px;
+line-height: 22px;
+text-align: center;
+}
+.hrreviews{
+ border: 1px solid #0000001A;
+ margin-bottom: 24px;
+}
+
+.h3reviews{
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+margin-right: 5px;
+
+}
+.reviewscontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 17px;
+}
+.reviews{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 610;
+  height: 241;
+  margin-top: 40px;
+  border-width: 1px;
+  border-radius: 20px;
+  
+  border: 1px solid #0000001A;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 5px;
+  padding-left: 32px;
+}
+
+.morereviews{
+width: 230px;
+height: 52px;
+margin: 24px auto;
+border-width: 1px;
+border-radius: 62px;
+border: 1px solid #0000001A;
+gap: 12px;
+padding-top: 16px;
+padding-bottom: 16px;
+padding-right: 15px;
+padding-left: 45px;
+}
+
+.morereviews_text{
+font-weight: 500;
+font-size: 16px;
+}
+
+.h2productlist{
+  margin-top: 100px;
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+}
+
+.alsolike{
+  display: flex;
+  flex-direction: row;
+}
+.alsolike_dress{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 24px;
 }
