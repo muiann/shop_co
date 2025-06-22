@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useState, SetStateAction } from 'react';
 import Image from 'next/image';
 import styles from '../app/page.module.css'; 
 import { Slider, TextField, Typography, Box, Grid } from '@mui/material';
@@ -10,22 +10,13 @@ const Filter = () => {
   
   const [selectedSize, setSelectedSize] = useState("Large");
   
-  const handleSliderChange = (event, newValue) => {
+  const handleSliderChange = (event: Event, newValue: SetStateAction<number[]>) => {
     setPriceRange(newValue);
-  };
-  const handleMinInputChange = (event) => {
-    const value = Math.min(Number(event.target.value), priceRange[1]);
-    setPriceRange([value, priceRange[1]]);
-  };
-
-  const handleMaxInputChange = (event) => {
-    const value = Math.max(Number(event.target.value), priceRange[0]);
-    setPriceRange([priceRange[0], value]);
   };
   
   const [selectedColor, setSelectedColor] = useState("");
 
-  const handleColorSelect = (color) => {
+  const handleColorSelect = (color: SetStateAction<string>) => {
     setSelectedColor(color);
   };
 
@@ -54,9 +45,6 @@ const Filter = () => {
     
   ];
 
-  const handlePriceChange = (e) => {
-    setPriceRange([e.target.value, priceRange[1]]);
-  };
 
   return (
     

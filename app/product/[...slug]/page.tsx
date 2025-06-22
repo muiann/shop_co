@@ -16,10 +16,11 @@ async function getSuggestionsData() {
   return newArrivalsData.slice(9, 12);
 }
 
-export default async function ProductPage( { params }: { params: { slug: string[] }} ) {
+export default async function ProductPage( { params }: { params: Promise<{ slug: string[] }>} ) {
   const data: Product[] = await getExtraData();
+  const { slug } = await params;
   const productData = data.find(
-    (product) => product.id === Number(params.slug[0])
+    (product) => product.id === Number(slug[0])
   );
 
   if (!productData?.title) {
