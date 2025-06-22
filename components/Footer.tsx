@@ -4,7 +4,7 @@ import localFont from 'next/font/local';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Image from 'next/image';
 
-const integralCFfont = localFont({ src: '../public/fonts/integral_cf/integralCF-Medium.woff2' });
+const IntegralCFfont = localFont({ src: '../public/fonts/integral_cf/IntegralCF-Medium.woff2' });
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className={styles.container}>
         {/* Левая часть с логотипом и описанием */}
         <div className={styles.left}>
-          <h2 className={`${styles.logo} ${integralCFfont.className}`}>SHOP.CO</h2>
+          <h2 className={`${styles.logo} ${IntegralCFfont.className}`}>SHOP.CO</h2>
           <p className={styles.description}>
             We have clothes that suit your style and which you're proud to wear. From women to men.
           </p>

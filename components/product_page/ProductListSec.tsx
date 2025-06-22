@@ -6,7 +6,7 @@ import styles from '../../app/page.module.css';
 import localFont from 'next/font/local';
 
 const Satoshi = localFont({ src: '../../public/fonts/Satoshi_Complete/Satoshi-Medium.woff2' });
-const integralCF = localFont({ src: '../../public/fonts/integral_cf/integralCF-Medium.woff2' });
+const IntegralCF = localFont({ src: '../../public/fonts/integral_cf/IntegralCF-Medium.woff2' });
 
 
 type ProductListSecProps = {
@@ -17,7 +17,7 @@ type ProductListSecProps = {
 const ProductListSec = ({ title, data }: ProductListSecProps) => {
   return (
     <section >
-      <h2 className={`${styles.h2productlist} ${integralCF.className}`}>You might also like</h2>
+      <h2 className={`${styles.h2productlist} ${IntegralCF.className}`}>You might also like</h2>
         <div className={styles.alsolike}
         >
           <div className={styles.alsolike_dress}>
