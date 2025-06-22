@@ -1,5 +1,7 @@
 import {newArrivalsData} from "../../data/data";
 import Header from "@/components/product_page";
+import ReviewsContent from "@/components/product_page/ReviewsContent";
+import ProductListSec from "@/components/product_page/ProductListSec";
 import { Product } from "@/app/types/product.types";
 import { notFound } from "next/navigation";
 
@@ -7,6 +9,11 @@ async function getExtraData() {
   //getting cached data
   // or getting extra data with new query
   return newArrivalsData;
+}
+
+async function getSuggestionsData() {
+  //getting cached data
+  return newArrivalsData.slice(9, 12);
 }
 
 export default async function ProductPage({
@@ -24,6 +31,9 @@ const data: Product[] = await getExtraData();
     notFound();
   }
 
+  
+  const suggest_data: Product[] = await getSuggestionsData();
+
   return (
     <main>
       <div className="max-w-frame mx-auto px-4 xl:px-0">
@@ -32,6 +42,8 @@ const data: Product[] = await getExtraData();
           <Header data={productData} />
         </section>
       </div>
+      <ReviewsContent/>
+      <ProductListSec title="You might also like" data={suggest_data}/>
     </main>
   );
 }
