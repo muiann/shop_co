@@ -1,13 +1,13 @@
 
 import Image from 'next/image';
 import localFont from 'next/font/local';
-import styles from '../app/page.module.css'; 
+import styles from "../app/page.module.css"; 
 
 <i className="fa fa-search"></i>;
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></link>;
 
 
-const IntegralCF = localFont({ src: '../public/fonts/integral_cf/IntegralCF-Medium.woff2' });
+const IntegralCF = localFont({ src: "../public/fonts/integral_cf/IntegralCF-Medium.woff2" });
 
 const Header = () => {
     return (
