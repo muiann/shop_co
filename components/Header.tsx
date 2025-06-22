@@ -7,7 +7,7 @@ import styles from '../app/page.module.css';
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></link>;
 
 
-const IntegralCF = localFont({ src: '../public/fonts/integral-cf/integralCF-Medium.woff2' });
+const IntegralCF = localFont({ src: '../public/fonts/integral_cf/integralCF-Medium.woff2' });
 
 const Header = () => {
     return (

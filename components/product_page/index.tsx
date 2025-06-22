@@ -7,7 +7,7 @@ import styles from '../../app/page.module.css';
 import localFont from 'next/font/local';
 
 const Satoshi = localFont({ src: '../../public/fonts/Satoshi_Complete/Satoshi-Medium.woff2' });
-const integralCF = localFont({ src: '../../public/fonts/integral-cf/integralCF-Medium.woff2' });
+const integralCF = localFont({ src: '../../public/fonts/integral_cf/integralCF-Medium.woff2' });
  
 const PageProduct = ({ data }: { data: Product }) => {
   return (

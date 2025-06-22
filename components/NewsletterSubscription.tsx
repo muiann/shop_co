@@ -4,7 +4,7 @@ import localFont from 'next/font/local';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Image from 'next/image';
 
-const integralCFfont = localFont({ src: '../public/fonts/integral-cf/integralCF-Medium.woff2' });
+const integralCFfont = localFont({ src: '../public/fonts/integral_cf/integralCF-Medium.woff2' });
 
 const NewsletterSubscription = () => {
   return (
