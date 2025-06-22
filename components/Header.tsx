@@ -13,6 +13,16 @@ const Header = () => {
     return (
       
       <header >
+        <div className={styles.singup}>
+         <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
+         {/* <Image 
+         src='../public/close-icon.png'
+         width={20}
+         height={20}
+         alt='close it'
+         /> */}
+        </div>
+
         <div className={styles.header}>
        
          <div className={styles.logo}>  
@@ -52,7 +62,7 @@ const Header = () => {
                  </div>   
                            
         </div>
- 
+ <hr className={styles.hrheader}/>
     </header>
   );  
 };

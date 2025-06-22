@@ -71,7 +71,7 @@ const Filter = () => {
       </div>
 
       <div className={styles.typethings}>
-            <hr />
+            <hr className={styles.hr}/>
             <ul>
                 <li><a href="">T-shirts</a><Image src="/arrow-icon.png" alt='' width={14} height={14} /></li>
                 <li><a href="">Shorts</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
@@ -81,8 +81,8 @@ const Filter = () => {
              </ul>
             </div>
         <div className={styles.filter_item}>
-            <hr />
-        <h4>Price</h4>
+            <hr className={styles.hr}/>
+        <h4 className={styles.h4}>Price</h4>
        <Box sx={{ width: 247, padding: 2 }}>
 
       <Slider
@@ -96,7 +96,6 @@ const Filter = () => {
           color: 'black',
         }}
       />
-      
       <Box
         display="flex"
         justifyContent="space-evenly"
@@ -107,10 +106,11 @@ const Filter = () => {
     </Box>
       </div>
 
+<hr className={styles.hr}/>
+
       <div style={{width: "200px" }}>
-      <div>
+      <div className={styles.h4}>
         <h4>Colors</h4>
-       
       </div>
       <div className={styles.colors}>
         {colors.map((color) => (
@@ -122,16 +122,16 @@ const Filter = () => {
               borderRadius: "50%",
               border: selectedColor === color.hex ? "1px solid #000000" : "1px solid #00000033",
               cursor: "pointer",
-              marginBottom: 20,
+              marginBottom: 7,
             }}
           ></div>
         ))}
       </div>
      
     </div>
- <hr />
+ <hr className={styles.hr}/>
       <div className={styles.filter_item}>
-        <h4>Size</h4>
+        <h4 className={styles.h4}>Size</h4>
         <div className={styles.sizes}>
           {sizes.map((size) => (
             <button
@@ -146,10 +146,10 @@ const Filter = () => {
           ))}
         </div>
       </div>
-       <hr  />
+       <hr  className={styles.hr}/>
                <div className={styles.typethings}>
            
-            <h4>Dress Style</h4>
+            <h4 className={styles.h4}>Dress Style</h4>
             <ul>
                 <li><a href="">Casual</a><Image src="/arrow-icon.png" alt='' width={14} height={14} /></li>
                 <li><a href="">Formal</a> <Image src="/arrow-icon.png" alt='' width={14} height={14}/></li>
