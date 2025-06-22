@@ -16,13 +16,8 @@ async function getSuggestionsData() {
   return newArrivalsData.slice(9, 12);
 }
 
-export default async function ProductPage({
-  params,
-}: {
-  params: { slug: string[] };
-}) {
-  
-const data: Product[] = await getExtraData();
+export default async function ProductPage( { params }: { params: { slug: string[] }} ) {
+  const data: Product[] = await getExtraData();
   const productData = data.find(
     (product) => product.id === Number(params.slug[0])
   );
@@ -30,7 +25,6 @@ const data: Product[] = await getExtraData();
   if (!productData?.title) {
     notFound();
   }
-
   
   const suggest_data: Product[] = await getSuggestionsData();
 
