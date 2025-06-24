@@ -26,7 +26,7 @@ export default function RootLayout({
         
       
        {/* <Slider/>  */}
-       <NewsletterSubscription />
+       {/* <NewsletterSubscription /> */}
         <Footer />
         </body>
     </html>

@@ -20,7 +20,7 @@ const ReviewCard = ({
       className={styles.reviews}
     >
       {blurChild && blurChild}
-      <div className="w-full flex items-center justify-between mb-3 sm:mb-4">
+      <div className=''>
         <Rating
           initialValue={data.rating}
           allowFraction
@@ -29,7 +29,7 @@ const ReviewCard = ({
           readonly
         />
       </div>
-      <div className="flex items-center mb-2 sm:mb-3">
+      <div className={styles.reviewsblock}>
         <strong className="text-black sm:text-xl mr-1">{data.user}</strong>
         <IoIosCheckmarkCircle className="text-[#01AB31] text-xl sm:text-2xl" />
       </div>
