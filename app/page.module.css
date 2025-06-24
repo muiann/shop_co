@@ -266,6 +266,7 @@ font-size: 20px;
 .photoclothing{
 width: 295px;
 height: 298px;
+border-radius: 20px;
 }
 
 .ratingnumber{
@@ -570,7 +571,10 @@ margin-bottom: 10px;
  flex-direction: column;
  gap: 5px;
 }
-.imgbutton
+.imgbutton{
+  width: 152;
+ height: 167;
+}
 
 .photoblock_max{
 width: 444;

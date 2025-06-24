@@ -13,17 +13,17 @@ const PhotoSection = ({ data }: { data: Product }) => {
       {data?.gallery && data.gallery.length > 0 && (
         <div className={styles.photoblock_mini}>
           {data.gallery.map((photo, index) => (
-            <button
+            <button 
               key={index}
               type="button"
-              
+              className={styles.imgbutton}
               onClick={() => setSelected(photo)}
             >
               <Image
                 src={photo}
                 width={152}
                 height={167}
-                className={styles.photoblock_mini}
+                className=  {styles.photoblock_mini}
                 alt={data.title}
                 priority
               />
