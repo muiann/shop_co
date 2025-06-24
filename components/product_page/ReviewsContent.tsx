@@ -16,7 +16,7 @@ async function getReviewsData() {
 export default async function ReviewsContent() {
   const reviews = await getReviewsData();
   return (
-    <section>
+    <section >
       
       <div className={styles.titlereviews}>
         <a href="">Product Details</a>
@@ -26,11 +26,11 @@ export default async function ReviewsContent() {
       </div>
 <hr className={styles.hrreviews}/>
       <div >
-        <div className="flex items-center mb-4 sm:mb-0 ">
+        <div className="">
           <h3 className={styles.h3reviews}>
             All Reviews
           </h3>
-          <span className="text-sm sm:text-base text-black/60">(451)</span>
+          <span className="">(451)</span>
         </div>
         
       </div>

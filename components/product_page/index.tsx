@@ -13,13 +13,12 @@ const PageProduct = ({ data }: { data: Product }) => {
   return (
     <>
     <Header />
-      <div className={styles.pageproduct}>
+      <div className={styles.infoproduct}>
         <div>
           <PhotoSection data={data} />
         </div>
-        <div>
-          <h1
-            className={`${styles.nameproduct} ${IntegralCF.className}`}
+        <div className={styles.aboutproduct}>
+          <h1 className={`${styles.nameproduct} ${IntegralCF.className}`}
           >
             {data.title}
           </h1>
@@ -75,13 +74,12 @@ const PageProduct = ({ data }: { data: Product }) => {
               )
             )}
           </div>
-          <p className={styles.aboutproduct}>
+          <p className={styles.aboutclothing}>
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
           <hr className="h-[1px] border-t-black/10 mb-5" />
-          <hr className="h-[1px] border-t-black/10 my-5" />
-          <hr className="hidden md:block h-[1px] border-t-black/10 my-5" />
+        
         </div>
 
        

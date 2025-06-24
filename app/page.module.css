@@ -550,48 +550,50 @@ margin-bottom: 10px;
 
 /* Стили страницы товара*/
 
+.infoproduct{
+  margin: 0 auto;
+  width: 1240px;
+   display: flex;
+   flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .photoblock{
-  margin-left: 70px;
   display: flex;
   gap: 10px;
 }
 .photoblock_mini{
  width: 152;
-height: 167;
-
-border-radius: 20px;
+ height: 167;
+ border-radius: 20px;
 }
 
 .photoblock_max{
 width: 444;
 height: 530;
-border-radius: 60px;
-margin-right: 30px;
+border-radius: 20px;
 }
 
-.pageproduct{
-   width: 1240px;
-   height: 530px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   gap: 24px;
+.aboutproduct{
+  max-width: 600px;
+  margin-left: 24px;
 }
+
 .nameproduct{
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 45px;
-  margin-left: 65px;
-  font-weight: bold;
-  margin-left: 0;
-  
+font-weight: 700;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000;
+
 }
 .rating{
   margin-top: 14px;
 }
 .rating_span{
   margin-top: 17px;
-  margin-left: 5px;
+ 
 font-family: Satoshi;
 font-weight: 400;
 font-size: 16px;
@@ -646,14 +648,27 @@ font-size: 16px;
 text-decoration: none;
 }
 
-.aboutproduct{
-margin-top: 24px;
+.aboutclothing{
+margin-top: 34px;
 font-weight: 400;
 font-size: 16px;
 color: #00000099;
-
 line-height: 22px;
-letter-spacing: 0%;
+
+}
+
+/*Reviews*/
+
+.hrreviews{
+ border: 1px solid #0000001A;
+ margin-bottom: 24px;
+}
+
+.h3reviews{
+font-weight: 700;
+font-size: 24px;
+vertical-align: middle;
+
 
 }
 
@@ -673,33 +688,22 @@ font-size: 20px;
 line-height: 22px;
 text-align: center;
 }
-.hrreviews{
- border: 1px solid #0000001A;
- margin-bottom: 24px;
-}
 
-.h3reviews{
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-vertical-align: middle;
-margin-right: 5px;
-
-}
 .reviewscontainer{
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 17px;
+  width: 1300px;
 }
 .reviews{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 610;
-  height: 241;
+  width: 600px;
+  height: 241px;
   margin-top: 40px;
   border-width: 1px;
   border-radius: 20px;
@@ -712,6 +716,7 @@ margin-right: 5px;
 }
 
 .morereviews{
+ 
 width: 230px;
 height: 52px;
 margin: 24px auto;

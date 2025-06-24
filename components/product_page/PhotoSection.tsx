@@ -16,7 +16,7 @@ const PhotoSection = ({ data }: { data: Product }) => {
             <button
               key={index}
               type="button"
-              className="bg-[#F0EEED] rounded-[13px] xl:rounded-[20px] w-full max-w-[111px] xl:max-w-[152px] max-h-[106px] xl:max-h-[167px] xl:min-h-[167px] aspect-square overflow-hidden"
+              className=""
               onClick={() => setSelected(photo)}
             >
               <Image
@@ -32,15 +32,15 @@ const PhotoSection = ({ data }: { data: Product }) => {
         </div>
       )}
 
-      <div className={styles.photoblock_max}>
+      <div >
         <Image
           src={selected}
           width={444}
           height={530}
-          className="rounded-2xl w-full h-full object-cover hover:scale-110 transition-all duration-500"
+          className={styles.photoblock_max}
           alt={data.title}
           priority
-          unoptimized
+         
         />
       </div>
     </div>

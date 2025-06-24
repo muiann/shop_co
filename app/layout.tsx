@@ -25,8 +25,7 @@ export default function RootLayout({
       <body className={Satoshi.className}>{children}
         
       
-       {/* <Slider/>  */}
-       {/* <NewsletterSubscription /> */}
+      
         <Footer />
         </body>
     </html>

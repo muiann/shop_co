@@ -16,9 +16,7 @@ const ReviewCard = ({
   data,
 }: ReviewCardProps) => {
   return (
-    <div
-      className={styles.reviews}
-    >
+    <div className={styles.reviews}>
       {blurChild && blurChild}
       <div className=''>
         <Rating
@@ -30,7 +28,7 @@ const ReviewCard = ({
         />
       </div>
       <div className={styles.reviewsblock}>
-        <strong className="text-black sm:text-xl mr-1">{data.user}</strong>
+        <strong className="">{data.user}</strong>
         <IoIosCheckmarkCircle className="text-[#01AB31] text-xl sm:text-2xl" />
       </div>
       <p className="text-sm sm:text-base text-black/60">{data.content}</p>

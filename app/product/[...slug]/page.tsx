@@ -4,6 +4,7 @@ import ReviewsContent from "@/components/product_page/ReviewsContent";
 import ProductListSec from "@/components/product_page/ProductListSec";
 import { Product } from "@/app/types/product.types";
 import { notFound } from "next/navigation";
+import styles from '../../page.module.css';
 
 async function getExtraData() {
   //getting cached data
@@ -31,15 +32,18 @@ export default async function ProductPage( { params }: { params: Promise<{ slug:
 
   return (
     <main>
-      <div >
-        <hr className="h-[1px] border-t-black/10 mb-5 sm:mb-6" />
-        <section >
+      <div>
+        <hr  />
+        <section>
 
           <PageProduct data={productData} />
         
         </section>
       </div>
-      <ReviewsContent/>
+     
+          <ReviewsContent/>
+    
+      
       <ProductListSec title="You might also like" data={suggest_data}/>
     </main>
   );
