@@ -16,7 +16,7 @@ const PhotoSection = ({ data }: { data: Product }) => {
             <button
               key={index}
               type="button"
-              className=""
+              
               onClick={() => setSelected(photo)}
             >
               <Image

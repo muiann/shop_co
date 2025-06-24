@@ -566,7 +566,11 @@ margin-bottom: 10px;
  width: 152;
  height: 167;
  border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
+.imgbutton
 
 .photoblock_max{
 width: 444;
